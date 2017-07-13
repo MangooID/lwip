@@ -801,6 +801,7 @@
 /* Validate the include paths - the include path used to generate pnglibconf.h
  * must match that used in the build, or we must be using pnglibconf.h.prebuilt:
  */
+/*
 #if PNG_ZLIB_VERNUM != 0 && PNG_ZLIB_VERNUM != ZLIB_VERNUM
 #  error ZLIB_VERNUM != PNG_ZLIB_VERNUM \
       "-I (include path) error: see the notes in pngpriv.h"
@@ -813,9 +814,9 @@
     * The most likely explanation is that you passed a -I in CFLAGS. This will
     * not work; all the preprocessor directories and in particular all the -I
     * directives must be in CPPFLAGS.
-    */
+    *\/
 #endif
-
+*/
 /* This is used for 16 bit gamma tables -- only the top level pointers are
  * const; this could be changed:
  */
